@@ -1,7 +1,10 @@
-# Selected Unity project source
+# Unity scripts
 
-This is a source-focused subset of the supplied Unity 2021.3.26f1 project. It includes the project-authored car-controller and camera scripts, their Unity metadata, a package manifest and the editor-version file.
+This folder contains two scripts from the cockpit's Unity project:
 
-The original project also contained EasyRoads3D and MapMagic vendor content and generated editor folders. These were not copied. There are no Unity scenes or imported vendor assets here, so this folder is not a complete playable build. Add further project-owned source or assets only when their license and provenance are clear.
+- `Assets/Scripts/CarController.cs` handles the simulated car's steering, throttle, braking and wheel movement.
+- `Assets/Scripts/cameracontroller.cs` follows the car in the simulation.
 
-The original car-controller file contained a stray ampersand before a field declaration; it has been removed from this repository copy as a syntax correction.
+The scripts are from a project created with **Unity 2021.3.26f1**. The package manifest and editor version are included for reference.
+
+This is a code sample, not a complete playable Unity project: scenes and third-party EasyRoads3D and MapMagic assets are not included. The original car controller also had a stray `&` that prevented it from compiling; that typo has been corrected here.
