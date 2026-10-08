@@ -6,11 +6,13 @@ This private repository combines a responsive project portfolio with the origina
 
 ## Portfolio
 
-Open `index.html` in a browser, or run any static web server from the repository root. The website uses plain HTML, CSS and JavaScript; it needs no package installation or build step. Google Fonts are optional; system font fallbacks are included.
+The portfolio is published at [malekismail01.github.io/car-racing-simulation-cockpit](https://malekismail01.github.io/car-racing-simulation-cockpit/). Open `index.html` in a browser or run any static web server from the repository root to preview it locally. The site uses plain HTML, CSS and JavaScript and requires no package installation or build step.
 
 **Project demo:** [Watch on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7096957835313336320/)
 
 The video is linked rather than embedded because playback and access are controlled by LinkedIn.
+
+GitHub Pages deploys only the portfolio HTML, styles, script, favicon and project photos. The private project report and Unity source are not published.
 
 ## Repository layout
 

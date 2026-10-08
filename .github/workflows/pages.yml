@@ -1,0 +1,49 @@
+name: Publish portfolio
+
+on:
+  push:
+    branches:
+      - malekismail01-build-cockpit-portfolio
+    paths:
+      - index.html
+      - styles.css
+      - script.js
+      - assets/favicon.svg
+      - assets/photos/**
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out portfolio
+        uses: actions/checkout@v4
+
+      - name: Prepare public site
+        run: |
+          mkdir -p _site/assets/photos
+          cp index.html styles.css script.js _site/
+          cp assets/favicon.svg _site/assets/
+          cp assets/photos/*.jpeg _site/assets/photos/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
