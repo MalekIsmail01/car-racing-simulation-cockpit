@@ -6,7 +6,7 @@ This private repository combines a responsive project portfolio with the origina
 
 ## Portfolio
 
-The portfolio is published at [malekismail01.github.io/car-racing-simulation-cockpit](https://malekismail01.github.io/car-racing-simulation-cockpit/). Open `index.html` in a browser or run any static web server from the repository root to preview it locally. The site uses plain HTML, CSS and JavaScript and requires no package installation or build step.
+The portfolio is published at [malekismail01.github.io/car-racing-simulation-cockpit-portfolio](https://malekismail01.github.io/car-racing-simulation-cockpit-portfolio/). The public site has its own repository containing only the portfolio and project photos; this repository remains private. Open `index.html` here in a browser or run any static web server from the repository root to preview it locally. The site uses plain HTML, CSS and JavaScript and requires no package installation or build step.
 
 **Project demo:** [Watch on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7096957835313336320/)
 
