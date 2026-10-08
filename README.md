@@ -30,20 +30,17 @@ The video is linked rather than embedded because playback and access are control
 └── styles.css                   # Responsive site styling
 ```
 
-## Project details
+## Unity code
 
-The report describes an Arduino Leonardo as the cockpit microcontroller; pedal potentiometers and springs; shifter limit switches; and a steering wheel with a rotary encoder and a motor-driven force-feedback mechanism. The Unity source included here consists of the car controller and follow-camera scripts found in the supplied project. The car-controller script had a stray `&` before a field declaration; that syntax typo was removed in the repository copy so the script can be parsed.
+**Yes—the repository includes Unity C# code** from the supplied project, under [`UnityProject/Assets/Scripts/`](UnityProject/Assets/Scripts/):
 
-The portfolio's workshop images are real photographs embedded in the authors' report, reproduced with the corresponding figure numbers and captions. They show physical parts and prototypes, not CAD renders. The images are also retained under `assets/photos/`.
+- `CarController.cs` — car movement, steering, braking and wheel behavior.
+- `cameracontroller.cs` — camera movement that follows the car.
 
-The original report is preserved at `docs/report/rapport-PFE-Malek-Ismail-Emir-Zouabi.docx`. The existing Unity project was inspected without changing its source directory. Only selected scripts, their Unity metadata, the original package manifest and Unity version were copied. The full Unity scenes/assets were not imported: the supplied project contains EasyRoads3D and MapMagic content, and no attempt is made to redistribute those vendor assets.
+These scripts are a small part of the Unity work, not the complete game or cockpit integration. Scenes and third-party road/terrain assets are not included, so `UnityProject/` is not a playable project on its own. The source project uses Unity **2021.3.26f1**. The supplied car-controller script had a stray character that prevented it from compiling; that typo is corrected in this copy.
 
-No standalone editable SolidWorks CAD models are included; the documented part visuals are photographs in the report.
+The report also documents the physical controls: an Arduino Leonardo, pedal springs and potentiometers, shifter limit switches, and a steering wheel with a rotary encoder and motor-driven force feedback. Those details describe the hardware in the report; the included C# files do not implement its Arduino firmware.
 
-## Open the Unity code
+## Report and photographs
 
-Open `UnityProject/` with Unity **2021.3.26f1**. The package manifest is carried over from the supplied project. This repository intentionally includes only the selected C# scripts and the minimum Unity project metadata, not a complete playable scene or its third-party assets.
-
-## Accuracy and scope
-
-The site does not claim universal game compatibility, a specific device-connection protocol or performance measurements. The LinkedIn demo is the source for viewing the original project in motion.
+The original report is in [`docs/report/`](docs/report/). The gallery uses real photographs embedded in that report, with their original figure numbers. They show the fabricated parts and physical prototypes—not CAD renders. The report does not include standalone editable SolidWorks model files.
