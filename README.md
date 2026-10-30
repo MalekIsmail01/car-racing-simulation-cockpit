@@ -40,10 +40,6 @@ The original report is preserved at `docs/report/rapport-PFE-Malek-Ismail-Emir-Z
 
 No standalone editable SolidWorks CAD models are included; the documented part visuals are photographs in the report.
 
-## Open the Unity code
-
-Open `UnityProject/` with Unity **2021.3.26f1**. The package manifest is carried over from the supplied project. This repository intentionally includes only the selected C# scripts and the minimum Unity project metadata, not a complete playable scene or its third-party assets.
-
 ## Accuracy and scope
 
 The site does not claim universal game compatibility, a specific device-connection protocol or performance measurements. The LinkedIn demo is the source for viewing the original project in motion.
